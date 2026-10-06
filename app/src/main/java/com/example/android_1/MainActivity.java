@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button txtButton = findViewById(R.id.btnText);
         Button clrButton = findViewById(R.id.btnColor);
+        Button bgButton = findViewById(R.id.btnBackground);
         TextView text = findViewById(R.id.mainText);
 
         txtButton.setOnClickListener(new View.OnClickListener(){
@@ -37,6 +38,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 text.setTextColor(ContextCompat.getColor(v.getContext(), R.color.purple));
+            }
+
+        });
+
+        bgButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+                text.setBackgroundColor(ContextCompat.getColor(v.getContext(), R.color.bright_purple));
             }
 
         });

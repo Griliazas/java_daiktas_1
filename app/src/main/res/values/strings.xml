@@ -2,6 +2,7 @@
     <string name="app_name">android_1</string>
     <string name= "txt_btn_name"> reveal text? </string>
     <string name= "clr_btn_name"> change color? </string>
+    <string name= "bg_btn_name"> change background color? </string>
     <string name= "txt_hidden"> ****** </string>
     <string name= "txt_revealed"> laba diena, tamsta destytojau, atsiprasau uz leta ikelima :)</string>
 </resources>
