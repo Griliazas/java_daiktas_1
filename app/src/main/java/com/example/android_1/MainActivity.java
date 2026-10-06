@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button txtButton = findViewById(R.id.btnText);
+        Button clrButton = findViewById(R.id.btnColor);
         TextView text = findViewById(R.id.mainText);
 
         txtButton.setOnClickListener(new View.OnClickListener(){
@@ -27,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
 
                  text.setText(getString(R.string.txt_revealed));
              }
+
+        });
+
+        clrButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+                text.setTextColor(ContextCompat.getColor(v.getContext(), R.color.purple));
+            }
 
         });
 
